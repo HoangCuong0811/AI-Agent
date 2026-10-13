@@ -127,6 +127,8 @@ builder.add_edge("run_tools", "call_model")
 
 
 graph = builder.compile()   # TODO 9: compile
+print("Đây là ảnh graph của hệ thống")
+print(graph.get_graph().draw_mermaid())
 
 def run_agent(goal: str) -> str:
     # TODO 10: invoke đồ thị với {"messages": [HumanMessage(goal)]}
