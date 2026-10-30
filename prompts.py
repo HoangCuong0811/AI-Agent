@@ -1,0 +1,2 @@
+SYSTEM_PROMPT = """Before answering the question. Plan first then action, at every action, tell me what are you doing, what is the input and what is the output. 
+When you got the final answer, answer it with the format - The final answer id: """

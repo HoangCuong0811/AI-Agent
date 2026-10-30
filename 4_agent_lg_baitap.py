@@ -132,7 +132,10 @@ builder.add_conditional_edges("call_model", tools_condition)
 builder.add_edge("tools", "call_model")
 
 
-graph = builder.compile(checkpointer=memory)   # TODO 9: compile
+graph = builder.compile(
+    checkpointer=memory,
+    interrupt_before=[]      
+)   # TODO 9: compile
 # print("Đây là ảnh graph của hệ thống")
 # print(graph.get_graph().draw_mermaid())
 
